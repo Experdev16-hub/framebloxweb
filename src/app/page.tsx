@@ -11,37 +11,31 @@ const sliderImages = [
   {
     id: 1,
     src: '/images/antonino-visalli-RNiBLy7aHck-unsplash.jpg',
-    alt: 'Fantasy landscape with magical elements',
     caption: 'Epic Fantasy World'
   },
   {
     id: 2,
     src: '/images/bruce-mars-8YG31Xn4dSw-unsplash.jpg',
-    alt: 'Futuristic cyberpunk cityscape',
     caption: 'Cyberpunk Metropolis'
   },
   {
     id: 3,
     src: '/images/dimitar-krastev-19lY7FMfWlo-unsplash.jpg',
-    alt: 'Hyperrealistic portrait with amazing details',
     caption: 'Hyperrealistic Portrait'
   },
   {
     id: 4,
     src: '/images/helena-lopes-PGnqT0rXWLs-unsplash.jpg',
-    alt: 'Dreamlike abstract composition',
     caption: 'Abstract Dreams'
   },
   {
     id: 5,
     src: '/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg',
-    alt: 'Dreamlike abstract composition',
     caption: 'Abstract Dreams'
   },
   {
     id: 6,
     src: '/images/simi-iluyomade-tvbxqXI5mmo-unsplash.jpg',
-    alt: 'Dreamlike abstract composition',
     caption: 'Abstract Dreams'
   }
 ];
