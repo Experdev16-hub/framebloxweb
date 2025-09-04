@@ -5,17 +5,20 @@ import { motion } from "framer-motion";
 export default function GlowBorderButton({ children }: { children: React.ReactNode }) {
   return (
     <motion.button
-      className="relative px-8 py-3 rounded-xl text-white font-semibold overflow-hidden group"
+      className="relative px-8 py-3 px-5 rounded-full text-white font-semibold overflow-hidden group"
       initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
       whileHover={{
         backgroundColor: "rgba(234, 88, 12, 1)",
-        transition: { duration: 0.8, ease: "easeOut" }
+        transition: { duration: 4, ease: "easeOut" },
+        color: "#000",
+        borderBlockColor: "rgba(234, 88, 12, 1)"
       }}
       whileTap={{ scale: 0.97 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
     >
       {/* Static gray border */}
-      <span className="absolute inset-0 rounded-xl border-2 border-gray-600 pointer-events-none"></span>
+      <motion.span 
+      className="absolute inset-0 rounded-full border-1 border-gray-600 pointer-events-none "
+      ></motion.span>
 
       {/* Animated glowing strip */}
       <svg
@@ -67,7 +70,7 @@ export default function GlowBorderButton({ children }: { children: React.ReactNo
       />
 
       {/* Button text */}
-      <span className="relative z-10">{children}</span>
+      <span className="relative z-10  flex justify-content items-center gap-5">{children}</span>
     </motion.button>
   );
 }
